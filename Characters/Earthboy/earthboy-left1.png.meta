@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 39ab0ddf3dbf7784781de40c4e1ef765
+guid: ff7d76afec1224a04ad81839f7971c1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9143868440440847147
-    second: gear_0
+      213: 9026621126637054050
+    second: earthboy-left1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gear_0
+      name: earthboy-left1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 113
         y: 1
-        width: 500
-        height: 499
+        width: 263
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2bb16976eb85ee70800000000000000
-      internalID: 9143868440440847147
+      spriteID: 268ec3fe610054d70800000000000000
+      internalID: 9026621126637054050
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gear_0: 9143868440440847147
+      earthboy-left1_0: 9026621126637054050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

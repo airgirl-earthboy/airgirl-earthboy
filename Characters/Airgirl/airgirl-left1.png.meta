@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 39ab0ddf3dbf7784781de40c4e1ef765
+guid: d1bca80dfe2b447cc995f4495168e3e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9143868440440847147
-    second: gear_0
+      213: 7595777382740200223
+    second: airgirl-left1_0
+  - first:
+      213: 4718408421613955550
+    second: airgirl-left1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gear_0
+      name: airgirl-left1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 500
-        height: 499
+        x: 58
+        y: 77
+        width: 385
+        height: 383
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2bb16976eb85ee70800000000000000
-      internalID: 9143868440440847147
+      spriteID: f1b0d23194f996960800000000000000
+      internalID: 7595777382740200223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airgirl-left1_1
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1
+        width: 187
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9e283d5772b7140800000000000000
+      internalID: 4718408421613955550
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gear_0: 9143868440440847147
+      airgirl-left1_0: 7595777382740200223
+      airgirl-left1_1: 4718408421613955550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
