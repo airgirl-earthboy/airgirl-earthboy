@@ -58,7 +58,7 @@ public class PlayerControls : MonoBehaviour
     // Runs at fixed rate (for physics-based movement)
     void FixedUpdate()
     {
-        rb2dA.velocity = inputA * speed;
-        rb2dE.velocity = inputE * speed;
+        rb2dA.linearVelocity = inputA * speed;
+        rb2dE.linearVelocity = inputE * speed;
     }
 }
