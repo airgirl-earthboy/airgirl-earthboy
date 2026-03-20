@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: 0, y: 100}
   m_SizeDelta: {x: 450.6147, y: 108.2236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186629844
@@ -2105,6 +2105,7 @@ GameObject:
   - component: {fileID: 553399395}
   - component: {fileID: 553399397}
   - component: {fileID: 553399398}
+  - component: {fileID: 553399399}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -2170,6 +2171,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collected: 0
   total: 4
+--- !u!114 &553399399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553399394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf5b7e596568c343bcbe6a938f768a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &660818717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,7 +2361,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &660818722
 RectTransform:
@@ -2832,7 +2845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 450.6147, y: 108.2236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &879840794
@@ -3883,7 +3896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -140}
+  m_AnchoredPosition: {x: 0, y: -60}
   m_SizeDelta: {x: 450.6147, y: 108.2236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903287487
@@ -4876,7 +4889,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4886,7 +4899,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4946,7 +4959,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4956,7 +4969,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -5287,24 +5300,24 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 80
     m_Data: {fileID: -337924600, guid: 980f877df269b334385e41b50c581864, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -1511443324, guid: 980f877df269b334385e41b50c581864, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -589843207, guid: 980f877df269b334385e41b50c581864, type: 3}
   - m_RefCount: 24
     m_Data: {fileID: 1634604277, guid: 980f877df269b334385e41b50c581864, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1222085236, guid: 980f877df269b334385e41b50c581864, type: 3}
+    m_Data: {fileID: -589843207, guid: 980f877df269b334385e41b50c581864, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -314471361, guid: 980f877df269b334385e41b50c581864, type: 3}
+    m_Data: {fileID: 1222085236, guid: 980f877df269b334385e41b50c581864, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1658190521, guid: 980f877df269b334385e41b50c581864, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1439276117, guid: 980f877df269b334385e41b50c581864, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 394221828, guid: 980f877df269b334385e41b50c581864, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -314471361, guid: 980f877df269b334385e41b50c581864, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 114
     m_Data:
