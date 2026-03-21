@@ -12,18 +12,21 @@ public class GearCollector : MonoBehaviour
         gearManager = GameObject.Find("Grid").GetComponent<GearManager>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.name == "Airgirl" || other.name == "Earthboy")
-        {
-            Collect();
-        }
-    }
-
+    // Add 1 to gear counter and destroy gear
     private void Collect()
     {
         Debug.Log("Gear collected");
         gearManager.collected += 1;
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // Could also compare names of GameObjects:
+        // (other.name == "Airgirl" || other.name == "Earthboy)
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Collect();
+        }
     }
 }
