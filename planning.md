@@ -1,5 +1,5 @@
 # Planning
-**Update tutorial and readme with *ANY* changes made**
+**Update tutorial and readme with *ANY* changes made, and EXPORT**
 
 ## Characters
 - Add moving animations (current bouncing animation should be idle animation)
@@ -41,3 +41,4 @@
 - Must have at least 3 distinct levels, difficulties, or areas
 - Ensure default Unity background is never visible
 - Ensure players cannot leave camera view (or maybe detect when they leave camera and do something about it)
+- Export to web once ready to submit (in playable state)
