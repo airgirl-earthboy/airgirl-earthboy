@@ -2,7 +2,6 @@
 **Update tutorial and readme with *ANY* changes made, and EXPORT**
 
 ## Characters
-- Prevent characters from slipping when stacked on top of each other (create physics material)
 - Characters should both have to reach their corresponding gate even after all gears are collected (activate panel showing warning about gears remaining)
 - ❌ Add 4th input for S/down arrow (ex. "ducking" animation)
 - ❌ Make each character have their respective abilities (ex. Airgirl can float instead of sink, Earthboy can have a platform summon at his own will)
@@ -12,6 +11,7 @@
 - ✅ Add moving animations (current bouncing animation should be idle animation)
 - ✅ Fix physics (make characters jump when pressing W/up arrow, don't let them hold key to move directly up and essentially fly through level)
 - ✅ Find need for both characters (ex. player can only get gear if the player stacks the two characters together)
+- ✅ Prevent characters from slipping when stacked on top of each other (create physics material)
 
 ## Audio
 - Add sound effects (walking, collecting gears)
