@@ -42,5 +42,5 @@
 - Ensure default Unity background is never visible
 - Ensure players cannot leave camera view (or maybe detect when they leave camera and do something about it)
 - Export to web once ready to submit (in playable state)
-- Update dev log using commits and Hackatime
+- Update dev log using commits and HackaTime
 - Remove all Debug.Log() statements
