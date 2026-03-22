@@ -1,4 +1,4 @@
-# Feedback
+# Feedback (used to plan pseudocode)
 - **Playtesters:** Joshua, Mario, Ryan, Vivian (all from Unity class)
 - **Commit name:**  "Finished playable level 1"
 - **Short commit SHA:** e96272c
