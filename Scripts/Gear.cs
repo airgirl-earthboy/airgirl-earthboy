@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GearCollector : MonoBehaviour
+// To be used only by Gear prefabs
+public class Gear : MonoBehaviour
 {
-    public GearManager gearManager;
+    private GearManager gearManager;
 
     // Start is called before the first frame update
     void Start()
