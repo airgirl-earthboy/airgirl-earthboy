@@ -28,7 +28,7 @@ public class PlayerControls : MonoBehaviour
 
         // Earthboy variable initializations
         earthboy = GameObject.Find("Earthboy");
-        animatorE = airgirl.GetComponent<Animator>();
+        animatorE = earthboy.GetComponent<Animator>();
         rb2dE = earthboy.GetComponent<Rigidbody2D>();
     }
 
@@ -37,37 +37,37 @@ public class PlayerControls : MonoBehaviour
     {
         // Airgirl input (WAD)
         inputA = Vector2.zero;
-        animatorA.SetFloat("SpeedX", 0);
+        animatorA.SetFloat("SpeedA", 0);
         if (Input.GetKey(KeyCode.W))
         {
             inputA += Vector2.up;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            animatorA.SetFloat("SpeedX", -1);
+            animatorA.SetFloat("SpeedA", -1);
             inputA += Vector2.left;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            animatorA.SetFloat("SpeedX", 1);
+            animatorA.SetFloat("SpeedA", 1);
             inputA += Vector2.right;
         }
 
         // Earthboy input (arrows)
         inputE = Vector2.zero;
-        animatorE.SetFloat("SpeedX", 0);
+        animatorE.SetFloat("SpeedE", 0);
         if (Input.GetKey(KeyCode.UpArrow))
         {
             inputE += Vector2.up;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            animatorE.SetFloat("SpeedX", -1);
+            animatorE.SetFloat("SpeedE", -1);
             inputE += Vector2.left;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            animatorE.SetFloat("SpeedX", 1);
+            animatorE.SetFloat("SpeedE", 1);
             inputE += Vector2.right;
         }
     }

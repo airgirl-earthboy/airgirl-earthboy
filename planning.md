@@ -2,7 +2,6 @@
 **Update tutorial and readme with *ANY* changes made, and EXPORT**
 
 ## Characters
-- Add moving animations (current bouncing animation should be idle animation)
 - Fix physics (make characters jump when pressing W/up arrow, don't let them hold key to move directly up and essentially fly through level)
 - Players should both have to reach their corresponding gate even after all gears are collected
 - Find need for both characters (ex. player can only get gear if the player stacks the two characters together)
@@ -11,6 +10,7 @@
 - Prevent both characters from being controlled at once
 - Try using polygon collider (research how to edit, too many points created)
 - ✅ Use capsule collider to prevent characters from getting stuck (hair should not be included in collider)
+- ✅ Add moving animations (current bouncing animation should be idle animation)
 
 ## Audio
 - Add sound effects (walking, collecting gears)
