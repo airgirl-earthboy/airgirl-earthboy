@@ -7,6 +7,7 @@ public class PlayerControls : MonoBehaviour
     // Declarations for both Airgirl and Earthboy
     public float speed = 5f;
     public float jumpForce = 5f;
+    public float jumpCooldown = 0.1f;
     public float groundCheckRadius = 0.2f;
     private LayerMask groundLayer;
 
@@ -16,6 +17,7 @@ public class PlayerControls : MonoBehaviour
     private Rigidbody2D rb2dA;
     private Transform groundCheckA;
     private float xInputA;
+    private float lastJumpTimeA;
     private bool jumpA;
     private bool groundedA;
 
@@ -48,13 +50,21 @@ public class PlayerControls : MonoBehaviour
     void Update()
     {
         // Airgirl animation and input handling (WAD)
-        groundedA = Physics2D.OverlapCircle(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer
-        Debug.Log("Grounded: " + groundedA);
         xInputA = 0;
         animatorA.SetFloat("SpeedA", 0);
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Time.time > lastJumpTimeA + jumpCooldown) // Prevent multiple consecutive jumps
+        {
+            groundedA = Physics2D.OverlapCircle(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer
+        }
+        else
+        {
+            groundedA = false;
+        }
+        Debug.Log("Grounded: " + groundedA);
+        if (Input.GetKeyDown(KeyCode.W) && groundedA)
         {
             jumpA = true;
+            lastJumpTimeA = Time.time;
         }
         if (Input.GetKey(KeyCode.A))
         {
