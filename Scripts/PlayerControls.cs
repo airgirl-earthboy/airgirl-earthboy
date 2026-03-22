@@ -25,14 +25,17 @@ public class PlayerControls : MonoBehaviour
     private GameObject earthboy;
     private Animator animatorE;
     private Rigidbody2D rb2dE;
+    private Transform groundCheckE;
     private float xInputE;
+    private float lastJumpTimeE;
     private bool jumpE;
+    private bool groundedE;
 
     // Start is called before the first frame update
     void Start()
     {
         // Initializations for Airgirl and Earthboy
-        groundLayer = LayerMask.GetMask("Ground", "Player");
+        groundLayer = LayerMask.GetMask("Ground", "Player"); // Allow players to jump on top of each other to reach collectibles
 
         // Airgirl variable initializations
         airgirl = GameObject.Find("Airgirl");
@@ -44,6 +47,7 @@ public class PlayerControls : MonoBehaviour
         earthboy = GameObject.Find("Earthboy");
         animatorE = earthboy.GetComponent<Animator>();
         rb2dE = earthboy.GetComponent<Rigidbody2D>();
+        groundCheckE = earthboy.transform.Find("GroundCheck");
     }
 
     // Update is called once per frame
@@ -70,7 +74,6 @@ public class PlayerControls : MonoBehaviour
         {
             groundedA = false;
         }
-        Debug.Log("Grounded: " + groundedA);
         if (Input.GetKeyDown(KeyCode.W) && groundedA)
         {
             jumpA = true;
@@ -90,9 +93,28 @@ public class PlayerControls : MonoBehaviour
         // Earthboy animation and input handling (arrows)
         xInputE = 0;
         animatorE.SetFloat("SpeedE", 0);
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Time.time > lastJumpTimeE + jumpCooldown) // Prevent multiple consecutive jumps
+        {
+            Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheckE.position, groundCheckRadius, groundLayer); // Check if groundCheckE point is touching anything on groundLayer (except Earthboy)
+            bool foundGround = false;
+            foreach (var h in hits)
+            {
+                if (h.gameObject != earthboy)
+                {
+                    foundGround = true;
+                    break;
+                }
+            }
+            groundedE = foundGround;
+        }
+        else
+        {
+            groundedE = false;
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow) && groundedE)
         {
             jumpE = true;
+            lastJumpTimeE = Time.time;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {

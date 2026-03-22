@@ -2,7 +2,6 @@
 **Update tutorial and readme with *ANY* changes made, and EXPORT**
 
 ## Characters
-- Fix physics (make characters jump when pressing W/up arrow, don't let them hold key to move directly up and essentially fly through level)
 - Players should both have to reach their corresponding gate even after all gears are collected
 - Find need for both characters (ex. player can only get gear if the player stacks the two characters together)
 - Add 4th input for S/down arrow (ex. "ducking" animation)
@@ -11,6 +10,7 @@
 - Try using polygon collider (research how to edit, too many points created)
 - ✅ Use capsule collider to prevent characters from getting stuck (hair should not be included in collider)
 - ✅ Add moving animations (current bouncing animation should be idle animation)
+- ✅ Fix physics (make characters jump when pressing W/up arrow, don't let them hold key to move directly up and essentially fly through level)
 
 ## Audio
 - Add sound effects (walking, collecting gears)
@@ -42,6 +42,7 @@
 - Must have at least 3 distinct levels, difficulties, or areas
 - Ensure default Unity background is never visible
 - Ensure players cannot leave camera view (or maybe detect when they leave camera and do something about it)
+- Ensure game is completely playable and finishable
+- Remove all Debug.Log() statements
 - Export to web once ready to submit (in playable state)
 - Update dev log using commits and HackaTime
-- Remove all Debug.Log() statements
