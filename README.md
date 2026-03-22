@@ -4,7 +4,9 @@ Help Airgirl and Earthboy explore the industrial wastelands!
 
 ## About
 
-2D co-op game where players work together to navigate mazes and unlock levels, inspired by [Fireboy and Watergirl](https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple)
+Airgirl and Earthboy is a **2D co-op game** inspired by [Fireboy and Watergirl](https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple) where players work together to navigate mazes and unlock levels.
+
+Airgirl and Earthboy was originally created as a submission for the **Video Game Design** event of the [Technology Student Association](https://tsaweb.org/), a national organization that hosts STEAM-related competitions. A Scratch version of this game was an entry for the 2025 [Gulf Coast Regional Conference](https://www.gulfcoasttsa.org/) of [Texas TSA](https://texastsa.org/), and this Unity version of the game was made as part of an end-of-year project for a game development high school class.
 
 ## How to Play
 
