@@ -54,7 +54,11 @@ public class PlayerControls : MonoBehaviour
         animatorA.SetFloat("SpeedA", 0);
         if (Time.time > lastJumpTimeA + jumpCooldown) // Prevent multiple consecutive jumps
         {
-            groundedA = Physics2D.OverlapCircle(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer
+            Collider2D hit = Physics2D.OverlapCircle(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer (except Airgirl)
+            if (hit.gameObject != airgirl)
+            {
+                groundedA = true;
+            }
         }
         else
         {
