@@ -2,7 +2,7 @@
 **Update tutorial and readme with *ANY* changes made, and EXPORT**
 
 ## Characters
-- Players should both have to reach their corresponding gate even after all gears are collected
+- Players should both have to reach their corresponding gate even after all gears are collected (activate panel showing warning about gears remaining)
 - Find need for both characters (ex. player can only get gear if the player stacks the two characters together)
 - Add 4th input for S/down arrow (ex. "ducking" animation)
 - Make each character have their respective abilities (ex. Airgirl can float instead of sink, Earthboy can have a platform summon at his own will)
@@ -18,6 +18,7 @@
 
 ## Levels
 - Add restart button to each level (resets positions of characters, resets gear counter, places gears back where they originally were)
+- Do something with obstacles tilemap
 - Increase difficulty (add obstacles, make larger playing area with a bunch of gears in trickier places)
 - Make each level unique (ex. one level could be used to show each of the character's abilities by forcing them to learn it, another level has the player combine them)
 - Add features (ex. green water area can only be gone through by Earthboy or Airgirl)
