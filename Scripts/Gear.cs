@@ -16,7 +16,6 @@ public class Gear : MonoBehaviour
     // Add 1 to gear counter and destroy gear
     private void Collect()
     {
-        Debug.Log("Gear collected");
         gearManager.collected += 1;
         Destroy(gameObject);
     }
