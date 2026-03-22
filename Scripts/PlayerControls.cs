@@ -32,7 +32,7 @@ public class PlayerControls : MonoBehaviour
     void Start()
     {
         // Initializations for Airgirl and Earthboy
-        groundLayer = LayerMask.GetMask("Ground");
+        groundLayer = LayerMask.GetMask("Ground", "Player");
 
         // Airgirl variable initializations
         airgirl = GameObject.Find("Airgirl");
@@ -54,11 +54,17 @@ public class PlayerControls : MonoBehaviour
         animatorA.SetFloat("SpeedA", 0);
         if (Time.time > lastJumpTimeA + jumpCooldown) // Prevent multiple consecutive jumps
         {
-            Collider2D hit = Physics2D.OverlapCircle(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer (except Airgirl)
-            if (hit.gameObject != airgirl)
+            Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer (except Airgirl)
+            bool foundGround = false;
+            foreach (var h in hits)
             {
-                groundedA = true;
+                if (h.gameObject != airgirl)
+                {
+                    foundGround = true;
+                    break;
+                }
             }
+            groundedA = foundGround;
         }
         else
         {

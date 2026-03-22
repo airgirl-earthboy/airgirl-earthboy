@@ -5,10 +5,11 @@ using UnityEngine;
 public class GearManager : MonoBehaviour
 {
     public int collected = 0;
-    public int total = GameObject.FindGameObjectsWithTag("Gear").Length;
+    public int total;
     // Start is called before the first frame update
     void Start()
     {
+        total = GameObject.FindGameObjectsWithTag("Gear").Length;
     }
 
     // Update is called once per frame
