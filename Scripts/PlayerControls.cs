@@ -49,6 +49,7 @@ public class PlayerControls : MonoBehaviour
     {
         // Airgirl animation and input handling (WAD)
         groundedA = Physics2D.OverlapCircle(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer
+        Debug.Log("Grounded: " + groundedA);
         xInputA = 0;
         animatorA.SetFloat("SpeedA", 0);
         if (Input.GetKeyDown(KeyCode.W))

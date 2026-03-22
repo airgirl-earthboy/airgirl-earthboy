@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 62530152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2.58}
+  m_AnchoredPosition: {x: 0, y: -2.83}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &186629842
@@ -2434,7 +2434,7 @@ GameObject:
   - component: {fileID: 770746177}
   - component: {fileID: 770746179}
   - component: {fileID: 770746180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Airgirl
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3271,7 +3271,7 @@ GameObject:
   - component: {fileID: 1266781768}
   - component: {fileID: 1266781770}
   - component: {fileID: 1266781771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Earthboy
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4325,7 +4325,7 @@ GameObject:
   - component: {fileID: 2142756969}
   - component: {fileID: 2142756968}
   - component: {fileID: 2142756967}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Ground-Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
