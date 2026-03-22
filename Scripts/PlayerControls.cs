@@ -5,19 +5,21 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
     public float speed = 5f;
+    public float jumpForce = 5f;
 
     // Airgirl variable declarations
     private GameObject airgirl;
     private Animator animatorA;
     private Rigidbody2D rb2dA;
-    private Vector2 inputA;
+    private float xInputA;
+    private bool jumpA;
 
     // Earthboy variable declaration
     private GameObject earthboy;
     private Animator animatorE;
     private Rigidbody2D rb2dE;
     private Vector2 inputE;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,25 +37,25 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Airgirl input (WAD)
-        inputA = Vector2.zero;
+        // Airgirl animation and input handling (WAD)
+        xInputA = 0;
         animatorA.SetFloat("SpeedA", 0);
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            inputA += Vector2.up;
+            jumpA = true;
         }
         if (Input.GetKey(KeyCode.A))
         {
             animatorA.SetFloat("SpeedA", -1);
-            inputA += Vector2.left;
+            xInputA = -1;
         }
         if (Input.GetKey(KeyCode.D))
         {
             animatorA.SetFloat("SpeedA", 1);
-            inputA += Vector2.right;
+            xInputA = 1;
         }
 
-        // Earthboy input (arrows)
+        // Earthboy animation and input handling (arrows)
         inputE = Vector2.zero;
         animatorE.SetFloat("SpeedE", 0);
         if (Input.GetKey(KeyCode.UpArrow))
@@ -76,7 +78,12 @@ public class PlayerControls : MonoBehaviour
     void FixedUpdate()
     {
         // Airgirl movement
-        rb2dA.linearVelocity = inputA * speed;
+        rb2dA.linearVelocity = new Vector2(xInputA * speed, rb2dA.linearVelocity.y);
+        if (jumpA)
+        {
+            rb2dA.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumpA = false;
+        }
 
         // Earthboy movement
         rb2dE.linearVelocity = inputE * speed;
