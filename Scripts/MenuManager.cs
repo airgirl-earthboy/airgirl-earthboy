@@ -8,7 +8,6 @@ public class MenuManager : MonoBehaviour
     // Start the game or proceed to the next level
     public void PlayGame()
     {
-        Debug.Log("Start Clicked");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -16,5 +15,11 @@ public class MenuManager : MonoBehaviour
     public void PlayLevel(int i)
     {
         SceneManager.LoadScene(i);
+    }
+
+    // Reset current level
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

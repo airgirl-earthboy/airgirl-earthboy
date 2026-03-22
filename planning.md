@@ -18,7 +18,6 @@
 - Add more different music (each level, success screen)
 
 ## Levels
-- Add restart button to each level (resets positions of characters, resets gear counter, places gears back where they originally were)
 - ❌ Truly implement obstacles tilemap (ex. time delay, character cannot move, level restarts)
 - ❌ Make each level unique (ex. one level could be used to show each of the character's abilities by forcing them to learn it, another level has the player combine them)
 - ❌ Add features (ex. green water area can only be gone through by Earthboy or Airgirl)
@@ -26,6 +25,7 @@
 - ✅ Make GearManager script detect how many total gears in level
 - ✅ Increase difficulty (add obstacles, place a bunch of gears in trickier places)
 - ✅ Make obstacles tilemap different from ground (characters cannot jump when standing on obstacle tile)
+- ✅ Add restart button to each level (resets positions of characters, resets gear counter, places gears back where they originally were)
 
 ## Tutorial
 - Have "slides" (panels that are activated upon click of "Next" button) to explain all aspects of game (update as needed)
