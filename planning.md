@@ -29,7 +29,7 @@
 
 ## Tutorial
 - Have "slides" (panels that are activated upon click of "Next" button) to explain all aspects of game (update as needed)
-- Ensure tutorial in game aligns with "How to Play" section of readme
+- Ensure tutorial in game explains EVERYTHING in game and aligns with "How to Play" section of readme
 - ❌ Have really easy demo/practice level to give player glimpse of all features
 
 ## Points

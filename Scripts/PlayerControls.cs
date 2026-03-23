@@ -16,6 +16,7 @@ public class PlayerControls : MonoBehaviour
     private Animator animatorA;
     private Rigidbody2D rb2dA;
     private Transform groundCheckA;
+    private GateManager gateA;
     private float xInputA;
     private float lastJumpTimeA;
     private bool jumpA;
@@ -26,6 +27,7 @@ public class PlayerControls : MonoBehaviour
     private Animator animatorE;
     private Rigidbody2D rb2dE;
     private Transform groundCheckE;
+    private GateManager gateE;
     private float xInputE;
     private float lastJumpTimeE;
     private bool jumpE;
@@ -42,89 +44,109 @@ public class PlayerControls : MonoBehaviour
         animatorA = airgirl.GetComponent<Animator>();
         rb2dA = airgirl.GetComponent<Rigidbody2D>();
         groundCheckA = airgirl.transform.Find("GroundCheck");
+        gateA = GameObject.Find("Gate-Airgirl").GetComponent<GateManager>();
 
         // Earthboy variable initializations
         earthboy = GameObject.Find("Earthboy");
         animatorE = earthboy.GetComponent<Animator>();
         rb2dE = earthboy.GetComponent<Rigidbody2D>();
         groundCheckE = earthboy.transform.Find("GroundCheck");
+        gateE = GameObject.Find("Gate-Earthboy").GetComponent<GateManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Airgirl animation and input handling (WAD)
-        xInputA = 0;
-        animatorA.SetFloat("SpeedA", 0);
-        if (Time.time > lastJumpTimeA + jumpCooldown) // Prevent multiple consecutive jumps
+        if (!gateA.doneA)
         {
-            Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer (except Airgirl)
-            bool foundGround = false;
-            foreach (var h in hits)
+            // Airgirl animation and input handling (WAD)
+            xInputA = 0;
+            animatorA.SetFloat("SpeedA", 0);
+            if (Time.time > lastJumpTimeA + jumpCooldown) // Prevent multiple consecutive jumps
             {
-                if (h.gameObject != airgirl)
+                Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheckA.position, groundCheckRadius, groundLayer); // Check if groundCheckA point is touching anything on groundLayer (except Airgirl)
+                bool foundGround = false;
+                foreach (var h in hits)
                 {
-                    foundGround = true;
-                    break;
+                    if (h.gameObject != airgirl)
+                    {
+                        foundGround = true;
+                        break;
+                    }
                 }
+                groundedA = foundGround;
             }
-            groundedA = foundGround;
+            else
+            {
+                groundedA = false;
+            }
+            if (Input.GetKeyDown(KeyCode.W) && groundedA)
+            {
+                jumpA = true;
+                lastJumpTimeA = Time.time;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                animatorA.SetFloat("SpeedA", -1);
+                xInputA = -1;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                animatorA.SetFloat("SpeedA", 1);
+                xInputA = 1;
+            }
         }
         else
         {
-            groundedA = false;
-        }
-        if (Input.GetKeyDown(KeyCode.W) && groundedA)
-        {
-            jumpA = true;
-            lastJumpTimeA = Time.time;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            animatorA.SetFloat("SpeedA", -1);
-            xInputA = -1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            animatorA.SetFloat("SpeedA", 1);
-            xInputA = 1;
+            rb2dA.simulated = false;
+            xInputA = 0;
+            animatorA.SetFloat("SpeedA", 0);
         }
 
-        // Earthboy animation and input handling (arrows)
-        xInputE = 0;
-        animatorE.SetFloat("SpeedE", 0);
-        if (Time.time > lastJumpTimeE + jumpCooldown) // Prevent multiple consecutive jumps
+        if (!gateE.doneE)
         {
-            Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheckE.position, groundCheckRadius, groundLayer); // Check if groundCheckE point is touching anything on groundLayer (except Earthboy)
-            bool foundGround = false;
-            foreach (var h in hits)
+            // Earthboy animation and input handling (arrows)
+            xInputE = 0;
+            animatorE.SetFloat("SpeedE", 0);
+            if (Time.time > lastJumpTimeE + jumpCooldown) // Prevent multiple consecutive jumps
             {
-                if (h.gameObject != earthboy)
+                Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheckE.position, groundCheckRadius, groundLayer); // Check if groundCheckE point is touching anything on groundLayer (except Earthboy)
+                bool foundGround = false;
+                foreach (var h in hits)
                 {
-                    foundGround = true;
-                    break;
+                    if (h.gameObject != earthboy)
+                    {
+                        foundGround = true;
+                        break;
+                    }
                 }
+                groundedE = foundGround;
             }
-            groundedE = foundGround;
+            else
+            {
+                groundedE = false;
+            }
+            if (Input.GetKeyDown(KeyCode.UpArrow) && groundedE)
+            {
+                jumpE = true;
+                lastJumpTimeE = Time.time;
+            }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                animatorE.SetFloat("SpeedE", -1);
+                xInputE = -1;
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                animatorE.SetFloat("SpeedE", 1);
+                xInputE = 1;
+            }
         }
         else
         {
-            groundedE = false;
-        }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && groundedE)
-        {
-            jumpE = true;
-            lastJumpTimeE = Time.time;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            animatorE.SetFloat("SpeedE", -1);
-            xInputE = -1;
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            animatorE.SetFloat("SpeedE", 1);
-            xInputE = 1;
+            rb2dE.simulated = false;
+            xInputE = 0;
+            animatorE.SetFloat("SpeedE", 0);
         }
     }
 

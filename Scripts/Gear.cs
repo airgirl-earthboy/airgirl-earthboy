@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// To be used only by Gear prefabs
+// Must only be used by Gear prefabs
 public class Gear : MonoBehaviour
 {
     private GearManager gearManager;

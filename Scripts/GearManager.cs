@@ -22,9 +22,5 @@ public class GearManager : MonoBehaviour
     void Update()
     {
         counterText.text = $"{collected}/{total}";
-        if (collected == total)
-        {
-            GameObject.Find("Canvas").transform.Find("Success").gameObject.SetActive(true);
-        }
     }
 }

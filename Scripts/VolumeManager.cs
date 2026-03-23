@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Must only be used by Slider
 public class VolumeManager : MonoBehaviour
 {
     public Slider volumeSlider;
