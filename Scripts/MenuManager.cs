@@ -11,15 +11,21 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    // Start level at index i
-    public void PlayLevel(int i)
-    {
-        SceneManager.LoadScene(i);
-    }
-
     // Reset current level
     public void ResetLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    // Return to level 1
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    // Start level at index i
+    public void PlayLevel(int i)
+    {
+        SceneManager.LoadScene(i);
     }
 }
