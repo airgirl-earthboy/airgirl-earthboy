@@ -15,7 +15,7 @@
 
 ## Audio
 - ❌ Add more different music (each level, success screen)
-- Add sound effects (collecting gears)
+- ✅ Add sound effects (collecting gears, warning popups, character reached gate)
 
 ## Levels
 - ❌ Truly implement obstacles tilemap (ex. time delay, character cannot move, level restarts)

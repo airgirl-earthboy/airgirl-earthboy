@@ -3958,7 +3958,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4387,6 +4387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSound: {fileID: 8300000, guid: bf0938dc5667ff34aa2616789bb48a17, type: 3}
+  doneSound: {fileID: 8300000, guid: 668620113e9d6dc4483ba3d8dbae9fcf, type: 3}
   doneA: 0
   doneE: 0
 --- !u!1 &660818717
@@ -8963,6 +8964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSound: {fileID: 8300000, guid: bf0938dc5667ff34aa2616789bb48a17, type: 3}
+  doneSound: {fileID: 8300000, guid: 668620113e9d6dc4483ba3d8dbae9fcf, type: 3}
   doneA: 0
   doneE: 0
 --- !u!1660057539 &9223372036854775807

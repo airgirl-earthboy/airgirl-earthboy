@@ -6,6 +6,7 @@ using UnityEngine;
 public class GateManager : MonoBehaviour
 {
     public AudioClip warningSound; // Marimba 3 Notes Descend.wav
+    public AudioClip doneSound; // Magic Score 5.wav
     private GearManager gearManager;
     private GameObject gateA;
     private GameObject gateE;
@@ -29,10 +30,12 @@ public class GateManager : MonoBehaviour
             if (gameObject.name == "Gate-Airgirl" && other.gameObject.name == "Airgirl")
             {
                 doneA = true;
+                AudioSource.PlayClipAtPoint(doneSound, Camera.main.transform.position, 0.5f);
             }
             if (gameObject.name == "Gate-Earthboy" && other.gameObject.name == "Earthboy")
             {
                 doneE = true;
+                AudioSource.PlayClipAtPoint(doneSound, Camera.main.transform.position, 0.5f);
             }
             if (gameObject.name == "Gate-Airgirl" && other.gameObject.name == "Earthboy" || gameObject.name == "Gate-Earthboy" && other.gameObject.name == "Airgirl")
             {
