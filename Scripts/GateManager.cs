@@ -5,6 +5,7 @@ using UnityEngine;
 // Must only be used by Gate tags
 public class GateManager : MonoBehaviour
 {
+    public AudioClip warningSound; // Marimba 3 Notes Descend.wav
     private GearManager gearManager;
     private GameObject gateA;
     private GameObject gateE;
@@ -35,12 +36,16 @@ public class GateManager : MonoBehaviour
             }
             if (gameObject.name == "Gate-Airgirl" && other.gameObject.name == "Earthboy" || gameObject.name == "Gate-Earthboy" && other.gameObject.name == "Airgirl")
             {
-                GameObject.Find("Canvas").transform.Find("Warning-WrongGate").gameObject.SetActive(true);
+                GameObject warning = GameObject.Find("Canvas").transform.Find("Warning-WrongGate").gameObject;
+                warning.SetActive(true);
+                AudioSource.PlayClipAtPoint(warningSound, Camera.main.transform.position, 0.5f);
             }
         }
         else
         {
-            GameObject.Find("Canvas").transform.Find("Warning-GearsLeft").gameObject.SetActive(true);
+            GameObject warning = GameObject.Find("Canvas").transform.Find("Warning-GearsLeft").gameObject;
+            warning.SetActive(true);
+            AudioSource.PlayClipAtPoint(warningSound, Camera.main.transform.position, 0.5f);
         }
     }
 }
