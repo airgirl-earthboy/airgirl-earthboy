@@ -43,11 +43,11 @@
 - ❌ OR have limited amount of time to complete each level and restart level once time is up (seems more complicated)
 
 ## Requirements
-- Must have at least 3 distinct levels, difficulties, or areas
-- Ensure default Unity background is never visible
-- Ensure players cannot leave camera view (or maybe detect when they leave camera and do something about it)
+- ✅ Must have at least 3 distinct levels, difficulties, or areas
+- ✅ Ensure default Unity background is never visible
+- ✅ Ensure players cannot leave camera view (or maybe detect when they leave camera and do something about it)
 - Ensure game is completely playable and finishable
 - Ensure background music is audible and played at consistent volume throughout all levels
-- Remove all Debug.Log() statements
+- ✅ Remove all Debug.Log() statements
 - Export to web once ready to submit (in playable state)
 - Update dev log using commits and HackaTime
