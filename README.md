@@ -64,7 +64,8 @@ Months later, when I was assigned my end-of-year project for my Unity class, I d
 
 ### Audio
 
-- [Adventure HO!](https://opengameart.org/content/adventure-ho) (title screen)
+- [Adventure HO!](https://opengameart.org/content/adventure-ho) (background music)
+- [Hints Stars Points & Rewards Sound Effects - Lite Pack](https://assetstore.unity.com/packages/audio/sound-fx/hints-stars-points-rewards-sound-effects-lite-pack-295538) (sound effects)
 
 ### Tilesets
 

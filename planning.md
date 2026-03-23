@@ -14,8 +14,8 @@
 - ✅ Characters should both have to reach their corresponding gate even after all gears are collected (activate panel showing warning about gears remaining)
 
 ## Audio
-- Add sound effects (walking, collecting gears)
-- Add more different music (each level, success screen)
+- ❌ Add more different music (each level, success screen)
+- Add sound effects (collecting gears)
 
 ## Levels
 - ❌ Truly implement obstacles tilemap (ex. time delay, character cannot move, level restarts)
