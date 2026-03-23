@@ -298,6 +298,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (8)
@@ -1204,6 +1208,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (9)
@@ -1286,6 +1294,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3514641483300561701, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023581523165105505, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4021,6 +4033,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (4)
@@ -4311,7 +4327,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f6edd296c6b701a4894c2e68e2b7ee22, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5250,6 +5266,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (3)
@@ -5347,6 +5367,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (5)
@@ -6341,6 +6365,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (1)
@@ -6438,6 +6466,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (6)
@@ -6667,6 +6699,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (2)
@@ -7071,6 +7107,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear (7)
@@ -8760,6 +8800,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789784931057491359, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
+      propertyPath: collectedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
     - target: {fileID: 2617653590547303562, guid: e6dea2c0d0ced4583bf0453a8a37ea09, type: 3}
       propertyPath: m_Name
       value: Gear
