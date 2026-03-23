@@ -21,15 +21,6 @@ public class GateManager : MonoBehaviour
         doneE = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (doneA && doneE)
-        {
-            GameObject.Find("Canvas").transform.Find("Success").gameObject.SetActive(true);
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (gameObject.name == "Gate-Airgirl" && other.gameObject.name == "Airgirl")
@@ -37,6 +28,7 @@ public class GateManager : MonoBehaviour
             if (gearManager.collected == gearManager.total)
             {
                 doneA = true;
+                Debug.Log("Airgirl has reached gate");
             }
         }
         if (gameObject.name == "Gate-Earthboy" && other.gameObject.name == "Earthboy")
@@ -44,6 +36,7 @@ public class GateManager : MonoBehaviour
             if (gearManager.collected == gearManager.total)
             {
                 doneE = true;
+                Debug.Log("Earthboy has reached gate");
             }
         }
     }

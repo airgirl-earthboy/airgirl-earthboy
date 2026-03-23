@@ -148,6 +148,12 @@ public class PlayerControls : MonoBehaviour
             xInputE = 0;
             animatorE.SetFloat("SpeedE", 0);
         }
+
+        if (gateA.doneA && gateE.doneE)
+        {
+            Debug.Log("Both Airgirl and Earthboy have reached gates");
+            GameObject.Find("Canvas").transform.Find("Success").gameObject.SetActive(true);
+        }
     }
 
     // Runs at fixed rate (for physics-based movement)

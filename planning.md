@@ -33,10 +33,10 @@
 - ❌ Have really easy demo/practice level to give player glimpse of all features
 
 ## Points
-- ✅ Have HUD keeping track of how many collectibles collected out of how many total
-- ✅ Game cleared when basic collectible items have been collected
 - ❌ Have different types of collectible items (ex. gears, tools)
 - ❌ Some worth more than others (specify amounts in tutorial)
+- ✅ Have HUD keeping track of how many collectibles collected out of how many total
+- ✅ Game cleared when basic collectible items have been collected
 
 ## Timer
 - ❌ Keep track of total elapsed time to display upon completion of all levels (use TimerManager)
