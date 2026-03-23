@@ -151,7 +151,6 @@ public class PlayerControls : MonoBehaviour
 
         if (gateA.doneA && gateE.doneE)
         {
-            Debug.Log("Both Airgirl and Earthboy have reached gates");
             GameObject.Find("Canvas").transform.Find("Success").gameObject.SetActive(true);
         }
     }

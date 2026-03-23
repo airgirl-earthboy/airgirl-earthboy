@@ -23,21 +23,24 @@ public class GateManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (gameObject.name == "Gate-Airgirl" && other.gameObject.name == "Airgirl")
+        if (gearManager.collected == gearManager.total)
         {
-            if (gearManager.collected == gearManager.total)
+            if (gameObject.name == "Gate-Airgirl" && other.gameObject.name == "Airgirl")
             {
                 doneA = true;
-                Debug.Log("Airgirl has reached gate");
             }
-        }
-        if (gameObject.name == "Gate-Earthboy" && other.gameObject.name == "Earthboy")
-        {
-            if (gearManager.collected == gearManager.total)
+            if (gameObject.name == "Gate-Earthboy" && other.gameObject.name == "Earthboy")
             {
                 doneE = true;
-                Debug.Log("Earthboy has reached gate");
             }
+            if (gameObject.name == "Gate-Airgirl" && other.gameObject.name == "Earthboy" || gameObject.name == "Gate-Earthboy" && other.gameObject.name == "Airgirl")
+            {
+                GameObject.Find("Canvas").transform.Find("Warning-WrongGate").gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            GameObject.Find("Canvas").transform.Find("Warning-GearsLeft").gameObject.SetActive(true);
         }
     }
 }
