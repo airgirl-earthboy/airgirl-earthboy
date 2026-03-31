@@ -25,7 +25,7 @@ public class GateManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (gearManager.collected == gearManager.total)
+        if (gearManager.collected >= gearManager.total)
         {
             if (gameObject.name == "Gate-Airgirl" && other.gameObject.name == "Airgirl")
             {
