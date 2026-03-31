@@ -3657,7 +3657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553399396}
   - component: {fileID: 553399395}
-  - component: {fileID: 553399397}
+  - component: {fileID: 553399401}
   - component: {fileID: 553399398}
   - component: {fileID: 553399399}
   - component: {fileID: 553399400}
@@ -3699,22 +3699,6 @@ Transform:
   - {fileID: 817897892}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &553399397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553399394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1578afc27432846c2849aee398ac9314, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 5
-  jumpCooldown: 0.1
-  groundCheckRadius: 0.2
 --- !u!114 &553399398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3839,6 +3823,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &553399401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553399394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1578afc27432846c2849aee398ac9314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 6
+  jumpCooldown: 0.1
+  groundCheckRadius: 0.2
 --- !u!1 &585110932
 GameObject:
   m_ObjectHideFlags: 0

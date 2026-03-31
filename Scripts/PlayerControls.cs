@@ -6,7 +6,7 @@ public class PlayerControls : MonoBehaviour
 {
     // Declarations for both Airgirl and Earthboy
     public float speed = 5f;
-    public float jumpForce = 5f;
+    public float jumpForce = 6f;
     public float jumpCooldown = 0.1f;
     public float groundCheckRadius = 0.2f;
     private LayerMask groundLayer;

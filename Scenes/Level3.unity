@@ -3914,7 +3914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 5
+  jumpForce: 6
   jumpCooldown: 0.1
   groundCheckRadius: 0.2
 --- !u!114 &553399398
