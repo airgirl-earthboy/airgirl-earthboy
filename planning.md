@@ -1,7 +1,6 @@
 # Planning (semi-pseudocode)
 
 ## UI
-- ❌ Create background (industrial vibe) for HUD to separate it from the rest of the level, place ground barrier under HUD to keep characters from going in front of / behind HUD
 - ✅ Change barrier around entire visible area of each level (make it look more like a barrier, change tilemap collider settings)
 - ✅ Add click sound effect for all buttons
 
@@ -10,6 +9,7 @@
 - ❌ Add option for resume: pause menu popup disappears
 - ❌ Add option for retry: display warning ("Are you sure you want to reset the current level? All your progress in this level will be lost!"), options are cancel or confirm (cancel has gray background with black text, confirm has red background with white text)
 - ❌ Add option for end: ("Are you sure you want to return to the main menu? All your progress in this level will be lost!"), options are cancel or yes (cancel has gray background with black text, yes has red background with white text)
+- ❌ Add option to control volume (use VolumeManager)
 - ❌ Make it accessible during gameplay from any level
 
 ## Player Movement
@@ -103,12 +103,13 @@
 - ❌ Add table of contents (brief title / short description of each slide) in side panel beside each slide in tutorial to allow player to find specific slide
 - ❌ Add little circles at bottom of each slide (gray for unselected slides, white for current slide) in tutorial to allow player to easily navigate to any slide
 - ❌ Add context (industrial wasteland setting) to beginning of tutorial
-- ❌ Make tutorial slides accessible for reference from any level in play mode (through hint button / light bulb icon, display popup)
+- ❌ Make tutorial slides accessible for reference from any level in play mode (add button to paused menu)
 
 ## Level Selection Menu
 - ❌ Add level selection menu (shows all levels, clearly marks completed levels)
 - ❌ Make it accessible from Play buttons on title screen and final slide of tutorial popup on title screen
 - ❌ Allow player to only redo unlocked levels (levels unlocked by completing them in sequence)
+- ❌ Locally save player progress (which levels have been unlocked) using PlayerPrefs (refer to VolumeManager)
 
 ## Title Screen
 - ❌ Make "Airgirl" and "Earthboy" be on same line (smaller font), with "&" in between
@@ -120,6 +121,7 @@
 - ❌ Turn options and credits menu into popups (rest of title screen still visible but darker)
 
 ## UX
+- ❌ Create background (industrial vibe) for HUD to separate it from the rest of the level, place ground barrier under HUD to keep characters from going in front of / behind HUD
 - ❌ Make Unity default background be black instead of blue (in case it is visible in full screen mode)
 - ❌ Add fade-in / fade-out transitions in between scenes
 - ❌ Add slide-up / slide-down transitions when popups appear
