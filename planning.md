@@ -16,7 +16,7 @@
 ## Player Movement
 - ✅ Allow Airgirl to float instead of just jump (lower gravity)
 - ✅ Allow Earthboy to run at twice Airgirl's speed
-- ❌ Add 4th input for S/down arrow ("ducking" animation)
+- ✅ Add 4th input for S/down arrow ("ducking" animation)
 - ❌ Add "boing" sound effect for jumping (both Airgirl and Earthboy)
 - ❌ Add "whoosh" sound effect for Airgirl moving
 - ❌ Add footstep sound effect for Earthboy moving
@@ -124,6 +124,7 @@
 - ✅ Turn options and credits menu into popups (rest of title screen still visible but darker)
 
 ## UX
+- ❌ Figure out why Earthboy keeps on getting stuck in random spots of tilemap
 - ❌ Create background (industrial vibe) for HUD to separate it from the rest of the level, place ground barrier under HUD to keep characters from going in front of / behind HUD
 - ❌ Make Unity default background be black instead of blue (in case it is visible in full screen mode)
 - ❌ Add fade-in / fade-out transitions in between scenes

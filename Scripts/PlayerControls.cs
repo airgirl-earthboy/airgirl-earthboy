@@ -34,6 +34,7 @@ public class PlayerControls : MonoBehaviour
     private float lastJumpTimeE;
     private bool jumpE;
     private bool groundedE;
+    private bool duckingE;
 
     // Start is called before the first frame update
     void Start()
@@ -146,6 +147,14 @@ public class PlayerControls : MonoBehaviour
             {
                 groundedE = false;
             }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                duckingE = true;
+            }
+            else
+            {
+                duckingE = false;
+            }
             if (Input.GetKeyDown(KeyCode.UpArrow) && groundedE)
             {
                 jumpE = true;
@@ -161,6 +170,7 @@ public class PlayerControls : MonoBehaviour
                 animatorE.SetFloat("SpeedE", 1);
                 xInputE = 1;
             }
+            animatorE.SetBool("DuckingE", duckingE);
         }
         else
         {
