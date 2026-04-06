@@ -35,6 +35,7 @@
 - ❌ Add different music to end of game (even more triumphant than level complete screen)
 - ❌ Add different music to title screen (adventurous)
 - ❌ Add different music each level (match vibe of level, make them all similar, but increase tempo as difficulty increases)
+- ❌ Make separate volume managers for music and sound effects
 
 ## Lives
 - ❌ Implement lives for Airgirl and Earthboy: 3 hearts each, contact with hazards causes them to lose a life
