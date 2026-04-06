@@ -97,10 +97,12 @@
 ## Practice Level
 - ❌ Have really easy practice level (untimed) to give player glimpse of all features
 - ❌ Automatically display popups explaining each feature as they encounter them while progressing through practice level
+- ❌ Explain updated player controls (ducking animation)
 - ❌ Make restart button (after last level) return to 1st timed level (right after practice level)
 
 ## Tutorial Slides
 - ❌ Have "slides" to explain all aspects of game (popup, series of panels)
+- ❌ Explain updated player controls (ducking animation)
 - ❌ Add next arrow button (activate next slide, deactivate current slide) and previous arrow button (activate previous slide, deactivate current slide)
 - ❌ Add table of contents (brief title / short description of each slide) in side panel beside each slide in tutorial to allow player to find specific slide
 - ❌ Add little circles at bottom of each slide (gray for unselected slides, white for current slide) in tutorial to allow player to easily navigate to any slide

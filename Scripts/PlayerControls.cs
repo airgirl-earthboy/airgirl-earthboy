@@ -22,6 +22,7 @@ public class PlayerControls : MonoBehaviour
     private float lastJumpTimeA;
     private bool jumpA;
     private bool groundedA;
+    private bool duckingA;
 
     // Earthboy variable declaration
     private GameObject earthboy;
@@ -61,7 +62,7 @@ public class PlayerControls : MonoBehaviour
     {
         if (!gateA.doneA && !paused.activeSelf)
         {
-            // Airgirl animation and input handling (WAD)
+            // Airgirl animation and input handling (WASD)
             rb2dA.simulated = true;
             xInputA = 0;
             animatorA.SetFloat("SpeedA", 0);
@@ -83,6 +84,14 @@ public class PlayerControls : MonoBehaviour
             {
                 groundedA = false;
             }
+            if (Input.GetKey(KeyCode.S))
+            {
+                duckingA = true;
+            }
+            else
+            {
+                duckingA = false;
+            }
             if (Input.GetKeyDown(KeyCode.W) && groundedA)
             {
                 jumpA = true;
@@ -90,14 +99,21 @@ public class PlayerControls : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.A))
             {
-                animatorA.SetFloat("SpeedA", -1);
                 xInputA = -1;
+                if (!duckingA)
+                {
+                    animatorA.SetFloat("SpeedA", -1);
+                }
             }
             if (Input.GetKey(KeyCode.D))
             {
-                animatorA.SetFloat("SpeedA", 1);
                 xInputA = 1;
+                if (!duckingA)
+                {
+                    animatorA.SetFloat("SpeedA", 1);
+                }
             }
+            animatorA.SetBool("DuckingA", duckingA);
         }
         else
         {
