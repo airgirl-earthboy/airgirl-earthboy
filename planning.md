@@ -77,6 +77,7 @@
 - ❌ Make exit gates be in different places in each level
 - ❌ Warn player about not being able to transition to different area of level without both players reaching door
 - ❌ Make harder levels have more collectibles, pushable objects, switches, obstacles (add more areas to have more room)
+- ❌ Add opening animations to exit gates
 
 ## Level Timer
 - ❌ Keep track of time per level
@@ -125,8 +126,7 @@
 - ❌ Make Unity default background be black instead of blue (in case it is visible in full screen mode)
 - ❌ Add fade-in / fade-out transitions in between scenes
 - ❌ Add slide-up / slide-down transitions when popups appear
-- ❌ Add opening animations to exit gates
-- ❌ Make buttons rounder
+- ✅ Make buttons rounder
 
 ## Submission Checklist
 - ❌ Tutorial in game explains EVERYTHING in game and aligns with "How to Play section of readme
