@@ -1,10 +1,9 @@
 # Planning (semi-pseudocode)
 
 ## UI
-- ❌ Make buttons rounder
-- ❌ Add click sound effect for all buttons
 - ❌ Create background (industrial vibe) for HUD to separate it from the rest of the level, place ground barrier under HUD to keep characters from going in front of / behind HUD
 - ❌ Change barrier around entire visible area of each level (make it look more like a barrier, change tilemap collider settings)
+- ✅ Add click sound effect for all buttons
 
 ## Paused Menu
 - ❌ Create paused button to access "Paused" menu popup
@@ -125,6 +124,7 @@
 - ❌ Add fade-in / fade-out transitions in between scenes
 - ❌ Add slide-up / slide-down transitions when popups appear
 - ❌ Add opening animations to exit gates
+- ❌ Make buttons rounder
 
 ## Submission Checklist
 - ❌ Tutorial in game explains EVERYTHING in game and aligns with "How to Play section of readme
