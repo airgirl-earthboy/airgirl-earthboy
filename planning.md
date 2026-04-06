@@ -2,7 +2,7 @@
 
 ## UI
 - ❌ Create background (industrial vibe) for HUD to separate it from the rest of the level, place ground barrier under HUD to keep characters from going in front of / behind HUD
-- ❌ Change barrier around entire visible area of each level (make it look more like a barrier, change tilemap collider settings)
+- ✅ Change barrier around entire visible area of each level (make it look more like a barrier, change tilemap collider settings)
 - ✅ Add click sound effect for all buttons
 
 ## Paused Menu
