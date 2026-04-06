@@ -18,7 +18,7 @@ Airgirl and Earthboy was originally created as a submission for the **Video Game
 
 [**Play now!**](https://airgirl-earthboy.github.io)
 
-## Behind the Website
+## Behind the Game
 
 Airgirl and Earthboy was created on Unity 6 using C#. For our [TSA](https://tsaweb.org/) submission, we had to create a multiplayer game for 2 to 4 players that was playable on one shared keyboard and mouse. When we began the process of developing our game, we decided to use Scratch to create a playable prototype since we did not have much game developing experience at the time.
 
