@@ -121,6 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectedSound: {fileID: 8300000, guid: d6945231be24c7240a281458fc849e1f, type: 3}
+  speed: 2
+  height: 0.25
+  randomizeStart: 1
 --- !u!70 &9032523968676387836
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
