@@ -17,10 +17,7 @@
 - ✅ Allow Airgirl to float instead of just jump (lower gravity)
 - ✅ Allow Earthboy to run at twice Airgirl's speed
 - ✅ Add 4th input for S/down arrow ("ducking" animation)
-- ❌ Add "boing" sound effect for jumping (both Airgirl and Earthboy)
-- ❌ Add "whoosh" sound effect for Airgirl moving
-- ❌ Add footstep sound effect for Earthboy moving
-- ❌ Create fade-in and fade-out transitions for "whoosh" sound
+- ✅ Add "boing" sound effect for jumping (both Airgirl and Earthboy)
 
 ## Collectibles
 - ❌ Add some collectibles in high places (for Airgirl)
@@ -138,6 +135,7 @@
 - ❌ All panels that are meant to be hidden are deactivated by default
 - ❌ Background music and sound effects are audible and played at consistent volume throughout all levels
 - ❌ All Debug.Log() statements are removed
+- ❌ Creators of all assets are acknowledged in all 4 readmes
 - ❌ Game is completely playable and finishable
 - ❌ Export to web once ready to submit (in playable state)
 

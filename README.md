@@ -10,7 +10,7 @@ Airgirl and Earthboy was originally created as a submission for the **Video Game
 
 ## How to Play
 
-- Use A.W.D to move **Airgirl**
+- Use WASD to move **Airgirl**
 
 - Use arrows to move **Earthboy**
 
@@ -66,8 +66,6 @@ Months later, when I was assigned my end-of-year project for my Unity class, I d
 
 - [Adventure HO!](https://opengameart.org/content/adventure-ho) (background music)
 - [Hints Stars Points & Rewards Sound Effects - Lite Pack](https://assetstore.unity.com/packages/audio/sound-fx/hints-stars-points-rewards-sound-effects-lite-pack-295538) (collecting gears, warning popups, and character reached gate sounds)
-- [wind whoosh loop](https://opengameart.org/content/wind-whoosh-loop) (Airgirl moving sound)
-- [Metal footsteps on concrete](https://opengameart.org/content/metal-footsteps-on-concrete) (Earthboy moving sound)
 - [Funny Comic Cartoon Bounce Sound](https://opengameart.org/content/funny-comic-cartoon-bounce-sound) (jumping sound)
 - [Click sounds(6)](https://opengameart.org/content/click-sounds6) (button click sound)
 

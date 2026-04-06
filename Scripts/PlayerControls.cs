@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
     // Declarations for both Airgirl and Earthboy
+    public AudioClip jumpingSound; // jump-sound.flac
     public float speed = 5f;
     public float jumpForce = 6f;
     public float jumpCooldown = 0.1f;
@@ -13,7 +14,6 @@ public class PlayerControls : MonoBehaviour
     private GameObject paused;
 
     // Airgirl variable declarations
-    public AudioClip floatingSound; // wind woosh loop.ogg
     private GameObject airgirl;
     private AudioSource audioSourceA;
     private Animator animatorA;
@@ -27,8 +27,6 @@ public class PlayerControls : MonoBehaviour
     private bool duckingA;
 
     // Earthboy variable declaration
-    public AudioClip walkingSound; // metal_steps_25.wav
-    public AudioClip jumpingSound; // jump-sound.flac
     private GameObject earthboy;
     private AudioSource audioSourceE;
     private Animator animatorE;
@@ -112,12 +110,6 @@ public class PlayerControls : MonoBehaviour
                 {
                     animatorA.SetFloat("SpeedA", -1);
                 }
-                if (!jumpA && audioSourceA != null && !audioSourceA.isPlaying)
-                {
-                    audioSourceA.clip = floatingSound;
-                    audioSourceA.loop = true;
-                    audioSourceA.Play();
-                }
             }
             if (Input.GetKey(KeyCode.D))
             {
@@ -126,16 +118,6 @@ public class PlayerControls : MonoBehaviour
                 {
                     animatorA.SetFloat("SpeedA", 1);
                 }
-                if (!jumpA && audioSourceA != null && !audioSourceA.isPlaying)
-                {
-                    audioSourceA.clip = floatingSound;
-                    audioSourceA.loop = true;
-                    audioSourceA.Play();
-                }
-            }
-            if (xInputA == 0 && !jumpA)
-            {
-                audioSourceA.Stop();
             }
             animatorA.SetBool("DuckingA", duckingA);
         }
@@ -185,29 +167,19 @@ public class PlayerControls : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                animatorE.SetFloat("SpeedE", -1);
                 xInputE = -1;
-                if (!jumpE && audioSourceE != null && !audioSourceE.isPlaying)
+                if (!duckingE)
                 {
-                    audioSourceE.clip = walkingSound;
-                    audioSourceE.loop = true;
-                    audioSourceE.Play();
+                    animatorE.SetFloat("SpeedE", -1);
                 }
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                animatorE.SetFloat("SpeedE", 1);
                 xInputE = 1;
-                if (!jumpE && audioSourceE != null && !audioSourceE.isPlaying)
+                if (!duckingE)
                 {
-                    audioSourceE.clip = walkingSound;
-                    audioSourceE.loop = true;
-                    audioSourceE.Play();
+                    animatorE.SetFloat("SpeedE", -1);
                 }
-            }
-            if (xInputE == 0 && !jumpE)
-            {
-                audioSourceE.Stop();
             }
             animatorE.SetBool("DuckingE", duckingE);
         }

@@ -4999,7 +4999,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use A.W.D to move Airgirl
+  m_text: Use WASD to move Airgirl
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ee3ee0781c5c0a4abc119a397212388, type: 2}
   m_sharedMaterial: {fileID: 4863158747894437301, guid: 0ee3ee0781c5c0a4abc119a397212388, type: 2}
