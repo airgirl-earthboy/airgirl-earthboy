@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
     // Declarations for both Airgirl and Earthboy
+    public AudioClip jumpingSound; // jump-sound.flac
     public float speed = 5f;
     public float jumpForce = 6f;
     public float jumpCooldown = 0.1f;
@@ -13,7 +14,9 @@ public class PlayerControls : MonoBehaviour
     private GameObject paused;
 
     // Airgirl variable declarations
+    public AudioClip floatingSound; // wind woosh loop.ogg
     private GameObject airgirl;
+    private AudioSource audioSourceA;
     private Animator animatorA;
     private Rigidbody2D rb2dA;
     private Transform groundCheckA;
@@ -25,7 +28,9 @@ public class PlayerControls : MonoBehaviour
     private bool duckingA;
 
     // Earthboy variable declaration
+    public AudioClip walkingSound; // metal_steps_25.wav
     private GameObject earthboy;
+    private AudioSource audioSourceE;
     private Animator animatorE;
     private Rigidbody2D rb2dE;
     private Transform groundCheckE;
@@ -45,6 +50,7 @@ public class PlayerControls : MonoBehaviour
 
         // Airgirl variable initializations
         airgirl = GameObject.Find("Airgirl");
+        audioSourceA = airgirl.GetComponent<AudioSource>();
         animatorA = airgirl.GetComponent<Animator>();
         rb2dA = airgirl.GetComponent<Rigidbody2D>();
         groundCheckA = airgirl.transform.Find("GroundCheck");
@@ -52,6 +58,7 @@ public class PlayerControls : MonoBehaviour
 
         // Earthboy variable initializations
         earthboy = GameObject.Find("Earthboy");
+        audioSourceE = earthboy.GetComponent<AudioSource>();
         animatorE = earthboy.GetComponent<Animator>();
         rb2dE = earthboy.GetComponent<Rigidbody2D>();
         groundCheckE = earthboy.transform.Find("GroundCheck");
@@ -105,6 +112,11 @@ public class PlayerControls : MonoBehaviour
                 {
                     animatorA.SetFloat("SpeedA", -1);
                 }
+                if (!jumpA && audioSourceA != null && !audioSourceA.isPlaying)
+                {
+                    audioSourceA.clip = floatingSound;
+                    audioSourceA.Play();
+                }
             }
             if (Input.GetKey(KeyCode.D))
             {
@@ -113,6 +125,15 @@ public class PlayerControls : MonoBehaviour
                 {
                     animatorA.SetFloat("SpeedA", 1);
                 }
+                if (!jumpA && audioSourceA != null && !audioSourceA.isPlaying)
+                {
+                    audioSourceA.clip = floatingSound;
+                    audioSourceA.Play();
+                }
+            }
+            if (xInputA == 0 && !jumpA)
+            {
+                audioSourceA.Stop();
             }
             animatorA.SetBool("DuckingA", duckingA);
         }
@@ -189,19 +210,27 @@ public class PlayerControls : MonoBehaviour
     void FixedUpdate()
     {
         // Airgirl movement
-        rb2dA.linearVelocity = new Vector2(xInputA * speed, rb2dA.linearVelocity.y);
         if (jumpA)
         {
             rb2dA.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            if (audioSourceA != null && !audioSourceA.isPlaying)
+            {
+                audioSourceA.PlayOneShot(jumpingSound);
+            }
             jumpA = false;
         }
+        rb2dA.linearVelocity = new Vector2(xInputA * speed, rb2dA.linearVelocity.y);
 
         // Earthboy movement
-        rb2dE.linearVelocity = new Vector2(xInputE * 2 * speed, rb2dE.linearVelocity.y);
         if (jumpE)
         {
             rb2dE.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            if (audioSourceA != null && !audioSourceA.isPlaying)
+            {
+                audioSourceA.PlayOneShot(jumpingSound);
+            }
             jumpE = false;
         }
+        rb2dE.linearVelocity = new Vector2(xInputE * 2 * speed, rb2dE.linearVelocity.y);
     }
 }
