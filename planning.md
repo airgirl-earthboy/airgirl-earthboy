@@ -14,8 +14,8 @@
 - ✅ Disable player input when paused menu is active
 
 ## Player Movement
-- ❌ Allow Airgirl to float instead of just jump (lower gravity, higher jump)
-- ❌ Allow Earthboy to run at twice Airgirl's speed
+- ✅ Allow Airgirl to float instead of just jump (lower gravity)
+- ✅ Allow Earthboy to run at twice Airgirl's speed
 - ❌ Add 4th input for S/down arrow ("ducking" animation)
 - ❌ Add "boing" sound effect for jumping (both Airgirl and Earthboy)
 - ❌ Add "whoosh" sound effect for Airgirl moving
@@ -97,6 +97,7 @@
 ## Practice Level
 - ❌ Have really easy practice level (untimed) to give player glimpse of all features
 - ❌ Automatically display popups explaining each feature as they encounter them while progressing through practice level
+- ❌ Make restart button (after last level) return to 1st timed level (right after practice level)
 
 ## Tutorial Slides
 - ❌ Have "slides" to explain all aspects of game (popup, series of panels)
@@ -111,14 +112,14 @@
 - ❌ Make it accessible from Play buttons on title screen and final slide of tutorial popup on title screen
 - ❌ Allow player to only redo unlocked levels (levels unlocked by completing them in sequence)
 - ❌ Locally save player progress (which levels have been unlocked) using PlayerPrefs (refer to VolumeManager)
+- ❌ Make the restart button (after last level) not reset the player's progress (unlocked levels remain unlocked)
 
 ## Title Screen
 - ✅ Make "Airgirl" and "Earthboy" be on same line, with "&" in between
-- ❌ Add image to background, make Airgirl and Earthboy smaller
 - ✅ Add idle animations to Airgirl and Earthboy
 - ✅ Replace options button with volume icon, place it at bottom left corner
 - ✅ Add credits menu, create button for it with information (i) icon, place it at bottom left corner (right of options button), display GitHub username (link to repo)
-- ❌ Turn options and credits menu into popups (rest of title screen still visible but darker)
+- ✅ Turn options and credits menu into popups (rest of title screen still visible but darker)
 
 ## UX
 - ❌ Create background (industrial vibe) for HUD to separate it from the rest of the level, place ground barrier under HUD to keep characters from going in front of / behind HUD

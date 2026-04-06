@@ -171,7 +171,7 @@ public class PlayerControls : MonoBehaviour
         }
 
         // Earthboy movement
-        rb2dE.linearVelocity = new Vector2(xInputE * speed, rb2dE.linearVelocity.y);
+        rb2dE.linearVelocity = new Vector2(xInputE * 2 * speed, rb2dE.linearVelocity.y);
         if (jumpE)
         {
             rb2dE.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
