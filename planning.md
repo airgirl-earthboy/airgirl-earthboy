@@ -11,7 +11,7 @@
 - ✅ Add option for end: ("Are you sure you want to return to the main menu? All your progress in this level will be lost!"), options are cancel or yes (cancel has gray background with black text, yes has red background with white text)
 - ✅ Add option to control volume (place volume icon at top right corner, use VolumeManager)
 - ✅ Make it accessible during gameplay from any level
-- ❌ Disable player input when paused menu is active
+- ✅ Disable player input when paused menu is active
 
 ## Player Movement
 - ❌ Allow Airgirl to float instead of just jump (lower gravity, higher jump)

@@ -10,6 +10,7 @@ public class PlayerControls : MonoBehaviour
     public float jumpCooldown = 0.1f;
     public float groundCheckRadius = 0.2f;
     private LayerMask groundLayer;
+    private GameObject paused;
 
     // Airgirl variable declarations
     private GameObject airgirl;
@@ -38,6 +39,7 @@ public class PlayerControls : MonoBehaviour
     {
         // Initializations for Airgirl and Earthboy
         groundLayer = LayerMask.GetMask("Ground", "Player"); // Allow players to jump on top of each other to reach collectibles
+        paused = GameObject.Find("Canvas").transform.Find("PausedEmpty").gameObject;
 
         // Airgirl variable initializations
         airgirl = GameObject.Find("Airgirl");
@@ -57,9 +59,10 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gateA.doneA)
+        if (!gateA.doneA && !paused.activeSelf)
         {
             // Airgirl animation and input handling (WAD)
+            rb2dA.simulated = true;
             xInputA = 0;
             animatorA.SetFloat("SpeedA", 0);
             if (Time.time > lastJumpTimeA + jumpCooldown) // Prevent multiple consecutive jumps
@@ -103,9 +106,10 @@ public class PlayerControls : MonoBehaviour
             animatorA.SetFloat("SpeedA", 0);
         }
 
-        if (!gateE.doneE)
+        if (!gateE.doneE && !paused.activeSelf)
         {
             // Earthboy animation and input handling (arrows)
+            rb2dE.simulated = true;
             xInputE = 0;
             animatorE.SetFloat("SpeedE", 0);
             if (Time.time > lastJumpTimeE + jumpCooldown) // Prevent multiple consecutive jumps
