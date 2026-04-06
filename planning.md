@@ -21,6 +21,14 @@
 - ❌ Add "whoosh" sound effect for Airgirl moving
 - ❌ Add footstep sound effect for Earthboy moving
 
+## Collectibles
+- ❌ Add some collectibles in high places (for Airgirl)
+- ❌ Add floating animations to all collectibles
+- ❌ Change colors of collectibles (blue for Airgirl, green for Earthboy)
+- ❌ Make blue collectibles only collidable with Airgirl, green collectibles only collidable with Earthboy
+- ❌ Add symbol of collectible item for each collectible tracker in HUD
+- ❌ Add particle systems to all collectibles (only blue or green)
+
 ## Music
 - ❌ Make PlayerPrefs for volume load automatically at start of each scene
 - ❌ Add different music to level complete screen (victorious vibe)
@@ -48,17 +56,6 @@
 - ❌ Add slippery "squelch" sound effect for oil
 - ❌ Add crackling "zap" sound effect for electricity
 - ❌ Add character status icons: small icons next to each character's lives to indicate status effect (ex. skull for toxic waste, oil drop for oil spills, lightning bolt for electricity barriers)
-
-## Collectibles
-- ❌ Have different types of collectible items (ex. gears, tools, keys) as prefabs, all with same sound effects
-- ❌ Add some collectibles in high places (for Airgirl)
-- ❌ Implement tracker for each collectible type
-- ❌ Update warnings about remaining collectibles at exit gates
-- ❌ Add floating animations to all collectibles
-- ❌ Change colors of collectibles (blue for Airgirl, green for Earthboy)
-- ❌ Make blue collectibles only collidable with Airgirl, green collectibles only collidable with Earthboy
-- ❌ Add symbol of collectible item for each collectible tracker in HUD
-- ❌ Add particle systems to all collectibles (only blue or green)
 
 ## Pushable Objects
 - ❌ Create pushable objects (turn all obstacles on top of ground into dynamic sprites)
@@ -119,8 +116,8 @@
 - ✅ Make "Airgirl" and "Earthboy" be on same line, with "&" in between
 - ❌ Add image to background, make Airgirl and Earthboy smaller
 - ✅ Add idle animations to Airgirl and Earthboy
-- ❌ Replace options button with volume icon, place it at bottom left corner
-- ❌ Add credits menu, create button for it with information (i) icon, place it at bottom left corner (right of options button)
+- ✅ Replace options button with volume icon, place it at bottom left corner
+- ❌ Add credits menu, create button for it with information (i) icon, place it at bottom left corner (right of options button), display GitHub username (link to repo)
 - ❌ Turn options and credits menu into popups (rest of title screen still visible but darker)
 
 ## UX
