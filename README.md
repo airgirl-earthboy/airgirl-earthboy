@@ -71,3 +71,9 @@ Months later, when I was assigned my end-of-year project for my Unity class, I d
 ### Tilesets
 
 - [Platformer Pack Industrial](https://kenney.nl/assets/platformer-pack-industrial)
+
+## Repositories
+
+- [Code](https://github.com/airgirl-earthboy/airgirl-earthboy) behind the game *(this repository)*
+
+- [Website](https://github.com/airgirl-earthboy/airgirl-earthboy.github.io) for deploying the web-based game
