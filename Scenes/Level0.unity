@@ -2057,7 +2057,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6089,13 +6089,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1578afc27432846c2849aee398ac9314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpingSound: {fileID: 8300000, guid: 184ccdfc1ef68498590dedd508103da0, type: 3}
   speed: 5
   jumpForce: 6
   jumpCooldown: 0.1
   groundCheckRadius: 0.2
   floatingSound: {fileID: 8300000, guid: d18eb7d7512474af683a70a3afb094a4, type: 3}
   walkingSound: {fileID: 8300000, guid: 121f3f19011ae4333bc779072ebeca94, type: 3}
+  jumpingSound: {fileID: 8300000, guid: 184ccdfc1ef68498590dedd508103da0, type: 3}
 --- !u!114 &660818725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8473,7 +8473,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
     // Declarations for both Airgirl and Earthboy
-    public AudioClip jumpingSound; // jump-sound.flac
     public float speed = 5f;
     public float jumpForce = 6f;
     public float jumpCooldown = 0.1f;
@@ -29,6 +28,7 @@ public class PlayerControls : MonoBehaviour
 
     // Earthboy variable declaration
     public AudioClip walkingSound; // metal_steps_25.wav
+    public AudioClip jumpingSound; // jump-sound.flac
     private GameObject earthboy;
     private AudioSource audioSourceE;
     private Animator animatorE;
@@ -115,6 +115,7 @@ public class PlayerControls : MonoBehaviour
                 if (!jumpA && audioSourceA != null && !audioSourceA.isPlaying)
                 {
                     audioSourceA.clip = floatingSound;
+                    audioSourceA.loop = true;
                     audioSourceA.Play();
                 }
             }
@@ -128,6 +129,7 @@ public class PlayerControls : MonoBehaviour
                 if (!jumpA && audioSourceA != null && !audioSourceA.isPlaying)
                 {
                     audioSourceA.clip = floatingSound;
+                    audioSourceA.loop = true;
                     audioSourceA.Play();
                 }
             }
@@ -185,11 +187,27 @@ public class PlayerControls : MonoBehaviour
             {
                 animatorE.SetFloat("SpeedE", -1);
                 xInputE = -1;
+                if (!jumpE && audioSourceE != null && !audioSourceE.isPlaying)
+                {
+                    audioSourceE.clip = walkingSound;
+                    audioSourceE.loop = true;
+                    audioSourceE.Play();
+                }
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 animatorE.SetFloat("SpeedE", 1);
                 xInputE = 1;
+                if (!jumpE && audioSourceE != null && !audioSourceE.isPlaying)
+                {
+                    audioSourceE.clip = walkingSound;
+                    audioSourceE.loop = true;
+                    audioSourceE.Play();
+                }
+            }
+            if (xInputE == 0 && !jumpE)
+            {
+                audioSourceE.Stop();
             }
             animatorE.SetBool("DuckingE", duckingE);
         }
@@ -225,9 +243,9 @@ public class PlayerControls : MonoBehaviour
         if (jumpE)
         {
             rb2dE.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            if (audioSourceA != null && !audioSourceA.isPlaying)
+            if (audioSourceE != null && !audioSourceE.isPlaying)
             {
-                audioSourceA.PlayOneShot(jumpingSound);
+                audioSourceE.PlayOneShot(jumpingSound);
             }
             jumpE = false;
         }

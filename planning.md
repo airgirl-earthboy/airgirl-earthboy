@@ -20,6 +20,7 @@
 - ❌ Add "boing" sound effect for jumping (both Airgirl and Earthboy)
 - ❌ Add "whoosh" sound effect for Airgirl moving
 - ❌ Add footstep sound effect for Earthboy moving
+- ❌ Create fade-in and fade-out transitions for "whoosh" sound
 
 ## Collectibles
 - ❌ Add some collectibles in high places (for Airgirl)
