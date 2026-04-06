@@ -16,7 +16,7 @@ public class GateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gearManager = GameObject.Find("Grid").GetComponent<GearManager>();
+        gearManager = GameObject.Find("Canvas").GetComponent<GearManager>();
         gateA = GameObject.Find("Gate-Airgirl");
         gateE = GameObject.Find("Gate-Earthboy");
         doneA = false;

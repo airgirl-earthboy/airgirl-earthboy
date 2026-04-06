@@ -23,6 +23,12 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    // Quit to title screen
+    public void TitleScreen()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     // Start level at index i
     public void PlayLevel(int i)
     {

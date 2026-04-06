@@ -11,7 +11,7 @@ public class Gear : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gearManager = GameObject.Find("Grid").GetComponent<GearManager>();
+        gearManager = GameObject.Find("Canvas").GetComponent<GearManager>();
     }
 
     // Add 1 to gear counter and destroy gear

@@ -5,12 +5,13 @@
 - ✅ Add click sound effect for all buttons
 
 ## Paused Menu
-- ❌ Create paused button to access "Paused" menu popup
-- ❌ Add option for resume: pause menu popup disappears
-- ❌ Add option for retry: display warning ("Are you sure you want to reset the current level? All your progress in this level will be lost!"), options are cancel or confirm (cancel has gray background with black text, confirm has red background with white text)
-- ❌ Add option for end: ("Are you sure you want to return to the main menu? All your progress in this level will be lost!"), options are cancel or yes (cancel has gray background with black text, yes has red background with white text)
-- ❌ Add option to control volume (use VolumeManager)
-- ❌ Make it accessible during gameplay from any level
+- ✅ Create paused button to access "Paused" menu popup
+- ✅ Add option for resume: paused menu popup disappears
+- ✅ Add option for retry: display warning ("Are you sure you want to reset the current level? All your progress in this level will be lost!"), options are cancel or confirm (cancel has gray background with black text, confirm has red background with white text)
+- ✅ Add option for end: ("Are you sure you want to return to the main menu? All your progress in this level will be lost!"), options are cancel or yes (cancel has gray background with black text, yes has red background with white text)
+- ✅ Add option to control volume (place volume icon at top right corner, use VolumeManager)
+- ✅ Make it accessible during gameplay from any level
+- ❌ Disable player input when paused menu is active
 
 ## Player Movement
 - ❌ Allow Airgirl to float instead of just jump (lower gravity, higher jump)
@@ -21,6 +22,7 @@
 - ❌ Add footstep sound effect for Earthboy moving
 
 ## Music
+- ❌ Make PlayerPrefs for volume load automatically at start of each scene
 - ❌ Add different music to level complete screen (victorious vibe)
 - ❌ Add different music to end of game (even more triumphant than level complete screen)
 - ❌ Add different music to title screen (adventurous)
@@ -84,12 +86,13 @@
 - ❌ Stop time after completing level
 - ❌ Display time per level upon completion of each level
 - ❌ Reset time after clicking "Continue" button
-- ❌ Reset time after clicking "Reset" button
+- ❌ Reset time after clicking "Retry" button in paused menu
 
 ## Game Timer
 - ❌ Keep track of total elapsed time
 - ❌ Pause when level completed screen displayed
-- ❌ Pause when pause menu selected
+- ❌ Pause when paused menu selected (create function to activate paused menu)
+- ❌ Continue time when paused menu closed (create function to deactivate paused menu)
 - ❌ Stop time after reaching end of game
 - ❌ Display total elapsed time upon completion of all levels
 - ❌ Reset time after clicking "Restart" button
@@ -104,7 +107,7 @@
 - ❌ Add table of contents (brief title / short description of each slide) in side panel beside each slide in tutorial to allow player to find specific slide
 - ❌ Add little circles at bottom of each slide (gray for unselected slides, white for current slide) in tutorial to allow player to easily navigate to any slide
 - ❌ Add context (industrial wasteland setting) to beginning of tutorial
-- ❌ Make tutorial slides accessible for reference from any level in play mode (add button to paused menu)
+- ❌ Make tutorial slides accessible for reference from any level in play mode (add button to paused menu, question mark icon)
 
 ## Level Selection Menu
 - ❌ Add level selection menu (shows all levels, clearly marks completed levels)
@@ -117,8 +120,8 @@
 - ❌ Add image to background
 - ❌ Make Airgirl and Earthboy smaller
 - ❌ Add idle animations to Airgirl and Earthboy (turn into sprites)
-- ❌ Replace options button with gear, place it at bottom left corner
-- ❌ Add credits menu, create button for it with question mark icon, place it at bottom left corner (right of options button)
+- ❌ Replace options button with volume icon, place it at bottom left corner
+- ❌ Add credits menu, create button for it with information (i) icon, place it at bottom left corner (right of options button)
 - ❌ Turn options and credits menu into popups (rest of title screen still visible but darker)
 
 ## UX

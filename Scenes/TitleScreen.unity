@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 335172562}
   - component: {fileID: 335172566}
   - component: {fileID: 335172567}
+  - component: {fileID: 335172568}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -583,6 +584,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 8300000, guid: 8ef3a6db0bd034a57a4f5ff007383676, type: 3}
+--- !u!114 &335172568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335172561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf5b7e596568c343bcbe6a938f768a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &385976215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,7 +2615,6 @@ GameObject:
   - component: {fileID: 956988326}
   - component: {fileID: 956988328}
   - component: {fileID: 956988327}
-  - component: {fileID: 956988329}
   m_Layer: 5
   m_Name: StartMenu
   m_TagString: Untagged
@@ -2673,18 +2685,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956988325}
   m_CullTransparentMesh: 1
---- !u!114 &956988329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956988325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbf5b7e596568c343bcbe6a938f768a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1047975628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3636,7 +3636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 956988329}
+      - m_Target: {fileID: 335172568}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
@@ -4585,7 +4585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 956988329}
+      - m_Target: {fileID: 335172568}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1

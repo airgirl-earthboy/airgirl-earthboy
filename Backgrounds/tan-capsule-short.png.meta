@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb41dd43c64984c2c83f87c5b5b9d09f
+guid: d50c1bb11efb04295a26076e20e61f51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8253243123279563184
-    second: tan-capsule_0
+      213: 1142658010089197430
+    second: tan-capsule-short_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tan-capsule_0
+      name: tan-capsule-short_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0567cff5b17967d80800000000000000
-      internalID: -8253243123279563184
+      spriteID: 67f0f17f7698bdf00800000000000000
+      internalID: 1142658010089197430
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tan-capsule_0: -8253243123279563184
+      tan-capsule-short_0: 1142658010089197430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
