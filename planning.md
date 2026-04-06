@@ -117,7 +117,7 @@
 - ❌ Add image to background, make Airgirl and Earthboy smaller
 - ✅ Add idle animations to Airgirl and Earthboy
 - ✅ Replace options button with volume icon, place it at bottom left corner
-- ❌ Add credits menu, create button for it with information (i) icon, place it at bottom left corner (right of options button), display GitHub username (link to repo)
+- ✅ Add credits menu, create button for it with information (i) icon, place it at bottom left corner (right of options button), display GitHub username (link to repo)
 - ❌ Turn options and credits menu into popups (rest of title screen still visible but darker)
 
 ## UX
